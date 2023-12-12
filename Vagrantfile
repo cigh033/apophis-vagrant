@@ -3,7 +3,7 @@ pacman -Sy
 ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 hwclock --systohc
 pacman --noconfirm -R virtualbox-guest-utils-nox && pacman --noconfirm -S virtualbox-guest-utils
-pacman --noconfirm -S networkmanager vim fish zsh chezmoi
+pacman --noconfirm -S networkmanager vim zsh chezmoi fakeroot
 systemctl enable NetworkManager
 systemctl enable vboxservice
 echo KEYMAP=de > /etc/vconsole.conf
@@ -28,7 +28,6 @@ Vagrant.configure("2") do |config|
     # https://www.vagrantup.com/docs/providers/virtualbox/configuration
     v.gui = true
     v.name = "apophis_vagrant"
-    v.linked_clone = true
     v.check_guest_additions = true
     v.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
     v.customize ["modifyvm", :id, "--vram", "64"] #video ram in MB
