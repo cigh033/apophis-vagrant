@@ -18,7 +18,7 @@ sudo -u vagrant echo 'isWorkMachine = "true"' > /home/vagrant/.config/chezmoi/ch
 sudo -u vagrant echo 'manualSetup = "false"' > /home/vagrant/.config/chezmoi/chezmoi.toml
 sudo -u vagrant echo 'isVirtual = "true"' > /home/vagrant/.config/chezmoi/chezmoi.toml
 sudo -u vagrant echo 'isMobile = "false"' > /home/vagrant/.config/chezmoi/chezmoi.toml
-sudo -u chezmoi init cigh033 --apply
+sudo -u vagrant chezmoi init cigh033 --apply
 reboot
 SCRIPT
 
