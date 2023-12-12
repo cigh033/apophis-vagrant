@@ -10,14 +10,14 @@ echo KEYMAP=de > /etc/vconsole.conf
 echo apophis > /etc/hostname
 sudo -u vagrant mkdir -p /home/vagrant/.config/chezmoi/
 sudo -u vagrant echo '[data]' > /home/vagrant/.config/chezmoi/chezmoi.toml
-sudo -u vagrant echo 'email = "simon@burgr.io"' > /home/vagrant/.config/chezmoi/chezmoi.toml
-sudo -u vagrant echo 'name = "sb"' > /home/vagrant/.config/chezmoi/chezmoi.toml
-sudo -u vagrant echo 'shell = "fish"' > /home/vagrant/.config/chezmoi/chezmoi.toml
-sudo -u vagrant echo 'isServer = "false"' > /home/vagrant/.config/chezmoi/chezmoi.toml
-sudo -u vagrant echo 'isWorkMachine = "true"' > /home/vagrant/.config/chezmoi/chezmoi.toml
-sudo -u vagrant echo 'manualSetup = "false"' > /home/vagrant/.config/chezmoi/chezmoi.toml
-sudo -u vagrant echo 'isVirtual = "true"' > /home/vagrant/.config/chezmoi/chezmoi.toml
-sudo -u vagrant echo 'isMobile = "false"' > /home/vagrant/.config/chezmoi/chezmoi.toml
+sudo -u vagrant echo 'email = "simon@burgr.io"' >> /home/vagrant/.config/chezmoi/chezmoi.toml
+sudo -u vagrant echo 'name = "sb"' >> /home/vagrant/.config/chezmoi/chezmoi.toml
+sudo -u vagrant echo 'shell = "fish"' >> /home/vagrant/.config/chezmoi/chezmoi.toml
+sudo -u vagrant echo 'isServer = "false"' >> /home/vagrant/.config/chezmoi/chezmoi.toml
+sudo -u vagrant echo 'isWorkMachine = "true"' >> /home/vagrant/.config/chezmoi/chezmoi.toml
+sudo -u vagrant echo 'manualSetup = "false"' >> /home/vagrant/.config/chezmoi/chezmoi.toml
+sudo -u vagrant echo 'isVirtual = "true"' >> /home/vagrant/.config/chezmoi/chezmoi.toml
+sudo -u vagrant echo 'isMobile = "false"' >> /home/vagrant/.config/chezmoi/chezmoi.toml
 sudo -u vagrant chezmoi init cigh033 --apply
 reboot
 SCRIPT
